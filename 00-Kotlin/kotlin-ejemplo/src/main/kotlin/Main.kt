@@ -39,6 +39,12 @@ fun main(args: Array<String>) {
     //cada bloque puede tener o no parentesis y empieza con flecha
 
     imprimirNombre("Jonathan")
+    calcularSueldo(10.00)//solo el requerido
+    calcularSueldo(10.00,15.00,20.00)//requerido y opcionales
+    //Named parameters
+    calcularSueldo(sueldo=10.00,bonoEspecial=20.00)// bono en 2do lugar
+    //gracias a los parametros nombrados
+    calcularSueldo(bonoEspecial=20.00,sueldo=10.00, tasa = 14.00)// bono en 1er lugar
 }
 
 fun imprimirNombre(nombre:String):Unit{//no existe el void pero si el Unit, es la funcion que no devueove nada
@@ -53,4 +59,53 @@ fun imprimirNombre(nombre:String):Unit{//no existe el void pero si el Unit, es l
     println("Nombre: $nombre.toString()")
     otraFuncionAdentro()
 
+}
+
+fun calcularSueldo(
+    sueldo:Double, //parametro requerido
+    tasa:Double = 12.00, //parametro opcional
+    bonoEspecial:Double? = null //parametro opcional que puede ser nulo
+    //si no se le pasa un valor, se le asigna null, ?->es nulable
+):Double{
+    //Int->Int? Nulable
+    //String->String? Nulable
+    //Date->Date? Nulable
+    if(bonoEspecial==null){
+        return sueldo*(100/tasa)
+    }else{
+        return sueldo*(100/tasa)+bonoEspecial
+    }
+}
+
+abstract class NumerosJava{
+    protected val numeroUno:Int
+    private val numeroDos:Int
+    constructor(
+        uno:Int,
+        dos:Int
+    ){
+        this.numeroUno=uno
+        this.numeroDos=dos
+        println("Inicializando")
+    }
+}
+abstract class Numeros(//constructor primario ojo-parentesis() para cosntructor primario
+    protected val numeroUno:Int//instancia.numeroUno
+    private val numeroDos:Int//instancia.numeroDos
+    parametroNoUsadoNoPropiedadDeLaClase:Int?=null
+){
+        init {//BLOQUE DE CODIGO DEL CONSTRUCTOR PRIMARIO
+        this.numeroUno
+        this.numeroDos
+        println("Inicializando")
+    }
+}
+
+class Suma(
+    unoParametro:Int,
+    dosParametro:Int
+):Numeros(//constructor primario con clase padre
+    unoParametro,
+    dosParametro
+){
 }
