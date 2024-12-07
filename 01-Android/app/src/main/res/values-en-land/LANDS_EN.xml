@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="qualifier">LANDSCAPE_ENGLISH</string>
+    <color name="qualifier_color">#2db917</color>
+    <color name="qualifier_background">#EDA02E</color>
+
 </resources>

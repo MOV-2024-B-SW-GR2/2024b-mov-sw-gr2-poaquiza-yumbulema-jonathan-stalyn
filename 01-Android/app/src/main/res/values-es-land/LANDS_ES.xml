@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="qualifier">LANDSCAPE_ESPAÑOL</string>
+    <color name="qualifier_color">#7d1dd2</color>
+    <color name="qualifier_background">#34A0F6</color>
 </resources>

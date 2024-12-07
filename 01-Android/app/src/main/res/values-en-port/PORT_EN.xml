@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="qualifier">PORTRAIT_ENGLISH</string>
+    <color name="qualifier_color">#1540A9</color>
+    <color name="qualifier_background">#74DB65</color>
 </resources>
