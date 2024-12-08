@@ -62,7 +62,7 @@ class MenuUI {
                 println("2. Leer Participantes de un Torneo")
                 println("3. Actualizar Participante")
                 println("4. Eliminar Participante")
-                println("5. Lista de Torneos")8
+                println("5. Lista de Torneos")
                 println("6. Volver al Menú Principal")
                 print("Seleccione una opción: ")
 
