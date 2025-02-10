@@ -12,7 +12,7 @@ android {
     defaultConfig {
         applicationId = "com.example.gr2sw2024b_jspy"
         minSdk = 27
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -29,11 +29,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_20
+        targetCompatibility = JavaVersion.VERSION_20
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "20"
     }
 }
 
