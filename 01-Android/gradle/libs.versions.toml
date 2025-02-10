@@ -13,7 +13,7 @@ googleFirebaseAppdistribution = "5.0.0"
 googleGmsGoogleServices = "4.4.2"
 googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
 playServicesMaps = "18.1.0"
-firebaseAuth = "23.2.0"
+firebaseAuth = "23.1.0"
 firebaseUiAuth = "7.2.0"
 
 [libraries]
